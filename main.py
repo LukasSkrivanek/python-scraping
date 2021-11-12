@@ -82,7 +82,7 @@ def get_other_properties(soup, complete_url_array):
     return voter_list, issued_envelopes, valid_votes
 
 
-def get_list_nejaky_pico():
+def get_list_of_parties():
     for tr in complete_url_array:
         r = requests.get(tr)
         soup = BeautifulSoup(r.text, "html.parser")
@@ -114,7 +114,7 @@ def main():
     get_data_for_properties()
     get_other_properties(soup, complete_url_array)
     print("I am saving, to file Data.csv")
-    get_list_nejaky_pico()
+    get_list_of_parties()
     get_to_csv(list_of_parties[0:25])
     print("I am ending this program")
 
