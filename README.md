@@ -11,11 +11,11 @@ $ pip3 --version                    # overim verzi manazeru
 $ pip3 install - r requirements.txt # nainstalujeme knihovny
 ```
 # Spouštění projektu 
-Spouštění souboru ```main.py``` v přík. řádku požadujeme dva povinné argumenty.
+Spouštění souboru ```main.py``` v přík. řádku 
 ```
-main.py <odkaz územního celku> <výsledný soubor>
+main.py 
 ```
-Následně se vým stáhnou výsledky jako soubor s příponou ```.csv```
+Následně se nám stáhnou výsledky jako soubor s příponou ```.csv```
 
 # Ukázka projektu
 Výsledky hlasování pro okres České Budějovice
