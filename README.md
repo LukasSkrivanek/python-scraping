@@ -11,10 +11,9 @@ $ pip3 --version                    # overim verzi manazeru
 $ pip3 install - r requirements.txt # nainstalujeme knihovny
 ```
 # Spouštění projektu 
-Spouštění souboru v terminálu (používáme macOS) a příklad jsem si zvolil České Budějovice.  ```python3 /main.py 'https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=3&xnumnuts=3101' 'CeskeBudejovice.csv'main.py``` v přík. řádku 
-```
-main.py 
-```
+Spouštění souboru v terminálu (používáme macOS) a příklad jsem si zvolil České Budějovice.  v přík. řádku 
+ ```python3 /main.py 'https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=3&xnumnuts=3101' 'CeskeBudejovice.csv'main.py
+ ```
 Následně se nám stáhnou výsledky jako soubor s příponou ```.csv```
 
 # Ukázka projektu
