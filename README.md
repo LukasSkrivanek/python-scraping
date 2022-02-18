@@ -21,12 +21,12 @@ Následně se nám stáhnou výsledky jako soubor s příponou
 Výsledky hlasování pro okres České Budějovice
 
 1. argument: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=3&xnumnuts=3101
-2. argument: Data.csv
+2. argument: CeskeBudejovice.csv
 
 # Průběh stahovaní
 ```
 I am donwloading data from this 
-I am saving, to file Data.csv
+I am saving, to file CeskeBudejovcie.csv
 I am ending this program
 ```
 # Částečný výstup
