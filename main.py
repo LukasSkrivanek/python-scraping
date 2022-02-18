@@ -102,17 +102,21 @@ def get_list_of_parties():
 def get_to_csv(list_of_parties):
     csv_colums = ["municipal code", "names of the village", "valid votes",
                   "voter list", "issued envelopes", tuple(list_of_parties)]
-    dict_of_data = [{"municipal code": municipal_codes},
-                    {"names of the village": names_of_the_village},
-                    {"valid votes": valid_votes},
-                    {"voter list": voter_list},
-                    {"issued envelopes": issued_envelopes},
-                    {tuple(list_of_parties): ""}]
+    dict_of_data = [csv_colums,
+                    municipal_codes,
+                    names_of_the_village,
+                    valid_votes,
+                    voter_list,
+                    issued_envelopes
+                    ]
 
     with open("CeskeBudejovice.csv", "w") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames = csv_colums)
-        writer.writeheader()
-        writer.writerows(dict_of_data)
+        #writer = csv.writer(csvfile)
+       # writer.writerows(dict_of_data)
+        writer = csv.writer(csvfile)
+        writer.writerow(csv_colums)
+        for item in zip(municipal_codes, names_of_the_village, valid_votes, voter_list, issued_envelopes):
+            c = writer.writerow(item)
 
 
 def main():
